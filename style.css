@@ -163,22 +163,24 @@
 }
 
 .lead__image {
-    max-width: 984px;
-    height: 580px;
+    width: 100%;
+    height: 615px;
     position: relative;
     background-image: url("images/kalegin-michail-179870-unsplash.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 .lead__group-4 {
+    max-width: 100%;
     position: absolute;
     left: 21.95px;
     right: 22.3px;
     top: 85.07px;
     bottom: 246.9px;
     z-index: 1;
-    max-width: 937px;
+
 }
 
 .lead__caption {
@@ -223,27 +225,59 @@
 
 .photo-grid {
     display: grid;
-    max-width: 1184px;
+    /* max-width: 91%; */
     grid-template-columns: repeat(auto-fit, 284px);
-    gap: 16px;
+    gap: 1rem;
     grid-auto-rows: 1fr;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 .photo-grid__item {
-    max-width: 284px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .photo-grid {
         display: grid;
-        max-width: 1184px;
-        grid-template-columns: repeat(auto-fit, minmax(px, 352px));
-        gap: 14px;
+        /* max-width: 91%; */
+        grid-template-columns: repeat(auto-fit, 300px);
+        /* gap: 0.8rem; */
         grid-auto-rows: 1fr;
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .photo-grid {
+        display: grid;
+        /* max-width: 91%; */
+        grid-template-columns: repeat(auto-fit, 325px);
+        /* gap: 1rem; */
+        grid-auto-rows: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 320) and (max-width: 767px) {
+    .photo-grid {
+        display: grid;
+        /* max-width: 91%; */
+        grid-template-columns: repeat(auto-fit, 288px);
+        /* gap: 0.7rem; */
+        grid-auto-rows: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .lead__image {
+       max-width: 100%;
     }
 }
