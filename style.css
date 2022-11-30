@@ -179,4 +179,37 @@
     font-size: 10px;
     line-height: 14px;
     letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.intro {
+    padding-top: 92px;
+    margin-left: 48px;
+    /* margin-right: 286px; */
+    max-width: 690px;
+}
+
+.intro__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+    /* color: #FFFFFF; */
+}
+
+.intro__text {
+    margin-top: 0;
+    margin-bottom: 33px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26.08px;
+    /* color: #FFFFFF; */
+}
+
+.intro__list {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
 }
