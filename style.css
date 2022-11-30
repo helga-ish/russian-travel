@@ -90,15 +90,20 @@
 
 .page {
     background-color: #2A2C2F;
-    max-width: 1024px;
+    max-width: 1280px;
     margin: auto;
     color: #FFFFFF;
     font-family: 'Inter';
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+
 
 }
 .header {
     margin: 28px 48px 0px 48px;
-    width: 928px;
+    max-width: 93%;
     max-height: 52px;
     display: flex;
     justify-content: space-between;
@@ -129,38 +134,41 @@
 }
 
 .lead {
-    max-width: 928px;
-    max-height: 962px;
-    margin: 54px 48px 0px 48px;
+    max-width: 77%;
+    /* max-height: 962px; */
+    /* margin: 54px 48px 0px 48px; */
+    margin: 54px auto 0px auto;
 }
 
 .lead__title {
     max-width: 720px;
     max-height: 200px;
     font-weight: 900;
-    font-size: 96px;
+    font-size: 6rem;
     line-height: 100px;
     text-align: center;
-    margin: 0px 104px 0px 104px;
+    margin: 0 auto 0 auto;
 }
 
 .lead__subtitle {
     max-width: 640px;
     max-height: 72px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.8rem;
     line-height: 36px;
     text-align: center;
     padding-top: 32px;
-    padding-bottom: 56px;
-    margin: 0px 144px 0px 144px;
+    padding-bottom: 64px;
+    margin: 0 auto 0 auto;
 }
 
 .lead__image {
-    width: 100%;
+    max-width: 984px;
     height: 580px;
     position: relative;
     background-image: url("images/kalegin-michail-179870-unsplash.jpg");
+    background-repeat: no-repeat;
+
 }
 
 .lead__group-4 {
@@ -170,6 +178,7 @@
     top: 85.07px;
     bottom: 246.9px;
     z-index: 1;
+    max-width: 937px;
 }
 
 .lead__caption {
@@ -184,9 +193,8 @@
 
 .intro {
     padding-top: 92px;
-    margin-left: 48px;
-    /* margin-right: 286px; */
-    max-width: 690px;
+    margin-left: 11.5%;
+    max-width: 54%;
 }
 
 .intro__title {
@@ -195,7 +203,6 @@
     font-weight: 900;
     font-size: 54px;
     line-height: 58px;
-    /* color: #FFFFFF; */
 }
 
 .intro__text {
@@ -204,7 +211,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26.08px;
-    /* color: #FFFFFF; */
 }
 
 .intro__list {
@@ -212,4 +218,32 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
+    padding-bottom: 92px;
+}
+
+.photo-grid {
+    display: grid;
+    max-width: 1184px;
+    grid-template-columns: repeat(auto-fit, 284px);
+    gap: 16px;
+    grid-auto-rows: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-grid__item {
+    max-width: 284px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .photo-grid {
+        display: grid;
+        max-width: 1184px;
+        grid-template-columns: repeat(auto-fit, minmax(px, 352px));
+        gap: 14px;
+        grid-auto-rows: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
