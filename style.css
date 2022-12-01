@@ -251,7 +251,7 @@
     font-weight: 900;
     font-size: 4.5rem;
     line-height: 76px;
-    margin: 0;
+    /* margin: 0; */
 
 }
 
@@ -270,6 +270,7 @@
     letter-spacing: 2px;
     padding: 0 0 12px 0;
     color: #AAAAAA;
+    margin: 0;
 }
 
 .website__link {
@@ -278,6 +279,7 @@
     line-height: 22px;
     color: #FFFFFF;
     text-decoration: underline;
+    margin: 0;
 }
 
 .place__paragraph {
@@ -285,11 +287,14 @@
     font-size: 18px;
     line-height: 29.34px;
     padding: 0;
+    margin: 0 auto;
 }
 .place__paragraph-text {
     padding-bottom: 27px;
-    margin: 0;
+    /* margin: 0; */
 }
+
+
 
 @media (max-width: 1279px) {
     .photo-grid {
@@ -309,6 +314,7 @@
     }
     .places {
         row-gap: 73px;
+        max-width: 720px;
     }
     .places__place {
         grid-template-columns: repeat(auto-fit, minmax(calc((100% - 28px)/2), 1fr));
@@ -339,6 +345,7 @@
     }
     .places {
         row-gap: 50px;
+        max-width: 320px;
     }
     .places__place {
         grid-template-columns: 1fr;
