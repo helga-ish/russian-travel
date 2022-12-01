@@ -231,18 +231,17 @@
 
 
 .places {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    max-width: 984px;
     margin: 92px auto 0px auto;
-
+    row-gap: 80px;
+    justify-content: center;
 }
 
 .places__place {
     display: grid;
     max-width: 984px;
-    /* grid-template-columns: 460px 484px; */
-    /* grid-template-rows: 152px 460px 1fr; */
-    grid-template-columns: repeat(auto-fit, calc((100% - 40px)/2));
+    grid-template-columns: repeat(auto-fit, minmax(calc((100% - 40px)/2), 1fr));
     column-gap: 40px;
     row-gap: 48px;
     margin: 0 auto 0 auto;
@@ -253,29 +252,15 @@
     font-size: 4.5rem;
     line-height: 76px;
     margin: 0;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
 
 }
 
 .place__image {
     width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
 }
 
 .place__website {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    align-self: end;
 }
 
 .website__url-heading {
@@ -300,12 +285,10 @@
     font-size: 18px;
     line-height: 29.34px;
     padding: 0;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
+}
+.place__paragraph-text {
+    padding-bottom: 27px;
     margin: 0;
-    white-space: pre-line;
 }
 
 @media (max-width: 1279px) {
@@ -313,6 +296,7 @@
         display: grid;
         grid-template-columns: repeat(3, 300px);
         gap: 0.8rem;
+}
 }
 
 @media (max-width: 990px) {
@@ -323,9 +307,11 @@
     .lead {
         margin: 0;
     }
+    .places {
+        row-gap: 73px;
+    }
     .places__place {
-        grid-template-columns: 340px 352px;
-        grid-template-rows: 92px 340px 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(calc((100% - 28px)/2), 1fr));
         column-gap: 28px;
     }
     .place__title {
@@ -351,9 +337,12 @@
         font-size: 2rem;
         line-height: 35px;
     }
+    .places {
+        row-gap: 50px;
+    }
     .places__place {
-        grid-template-columns: repeat(1, minmax(320px, 750px));
-        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        row-gap: 32px;
     }
 
 }
