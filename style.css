@@ -291,18 +291,65 @@
 }
 .place__paragraph-text {
     padding-bottom: 27px;
-    /* margin: 0; */
+    margin-top: 0;
+    padding-top: 0;
 }
 
+.cover {
+    max-width: 1184px;
+    margin: 92px auto 0 auto;
+    background-image: linear-gradient(rgba(42, 44, 47, 0.3), rgba(42, 44, 47, 0.3)),
+    url("images/cover-trains.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
 
+.cover__link {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+    padding: 245px 312px 245px 312px;
+}
+
+.cover__link:hover {
+    background-color: rgba(42, 44, 47, 0.8);
+}
+
+.cover__title {
+    max-width: 560px;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    text-align: center;
+}
+.cover__subtitle {
+    max-width: 360px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding: 32px 0 0 0;
+}
 
 @media (max-width: 1279px) {
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(3, 300px);
         gap: 0.8rem;
+    }
+    .cover {
+        box-sizing: none;
+    }
+    .cover__link {
+        padding: 195px 232px 195px 232px;
+    }
 }
-}
+
 
 @media (max-width: 990px) {
     .photo-grid {
@@ -324,9 +371,15 @@
         font-size: 42px;
         line-height: 46px;
     }
+    .cover {
+        max-width: 990px;
+    }
+    .cover__link {
+        padding: 115px 114px 115px 114px;
+    }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
     .photo-grid {
         grid-template-columns: repeat(1, 288px);
         gap: 0.7rem;
@@ -351,5 +404,21 @@
         grid-template-columns: 1fr;
         row-gap: 32px;
     }
-
+    .cover__title {
+        max-width: 288px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .cover__subtitle {
+        max-width: 288px;
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 16px;
+    }
+    .cover {
+        max-width: 750px;
+    }
+    .cover__link {
+        padding: 33px 16px;
+    }
 }
