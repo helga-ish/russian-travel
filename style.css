@@ -336,7 +336,43 @@
     padding: 32px 0 0 0;
 }
 
-@media (max-width: 1279px) {
+.footer {
+    display: flex;
+    max-width: 1184px;
+    justify-content: space-between;
+    margin: 92px auto 24px auto;
+}
+
+.footer__links {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+.footer__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 18px 0 0;
+    padding: 0;
+}
+
+
+.footer__copyright {
+    width: 186px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+
+}
+
+@media screen and (max-width: 1279px) {
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(3, 300px);
@@ -351,7 +387,7 @@
 }
 
 
-@media (max-width: 990px) {
+@media screen and (max-width: 1024px) {
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(2, 325px);
@@ -377,9 +413,12 @@
     .cover__link {
         padding: 115px 114px 115px 114px;
     }
+    .footer {
+        max-width: calc(100% - 48px);
+    }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 720px) {
     .photo-grid {
         grid-template-columns: repeat(1, 288px);
         gap: 0.7rem;
@@ -420,5 +459,68 @@
     }
     .cover__link {
         padding: 33px 16px;
+    }
+    .footer {
+        max-width: calc(100% - 24px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: repeat(1, 288px);
+        gap: 0.7rem;
+    }
+    .lead__title {
+        font-size: 2.5rem;
+        line-height: 44px;
+    }
+    .lead__subtitle {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .intro__title {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+    .places {
+        row-gap: 50px;
+        max-width: 320px;
+    }
+    .places__place {
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+    .cover__title {
+        max-width: 288px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .cover__subtitle {
+        max-width: 288px;
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 16px;
+    }
+    .cover {
+        max-width: 750px;
+    }
+    .cover__link {
+        padding: 33px 16px;
+    }
+    .footer {
+        max-width: 480px;
+        flex-direction: column;
+        margin-top: 64px;
+        margin-left: 16px;
+    }
+    .footer__links {
+        margin: 0 48px 0 auto;
+        flex-direction: column;
+    }
+    .footer__link {
+        padding-bottom: 32px;
+    }
+    .footer__copyright {
+        text-align: left;
     }
 }
