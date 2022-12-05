@@ -1,0 +1,7 @@
+.cover__background {
+    background-image: linear-gradient(rgba(42, 44, 47, 0.3), rgba(42, 44, 47, 0.3)),
+    url("../../../images/cover-trains.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
