@@ -676,7 +676,9 @@
         line-height: 24px;
         padding-bottom: 32px;
     }
-    .footer__link:
+    .footer__link:nth-last-of-type(1) {
+        padding-bottom: 48px;
+    }
     .footer__copyright {
         font-size: 14px;
         line-height: 14px;
