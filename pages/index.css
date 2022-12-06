@@ -31,10 +31,10 @@
 @import url(../blocks/places-grid/place/__title/place__title.css);
 @import url(../blocks/places-grid/place/__image/place__image.css);
 @import url(../blocks/places-grid/place/__paragraph/place__paragraph.css);
-@import url(../blocks/places-grid/place/__paragraph/__paragraph-text/place__paragraph-text.css);
+@import url(../blocks/places-grid/place/__paragraph-text/place__paragraph-text.css);
 @import url(../blocks/places-grid/place/__website/place__website.css);
-@import url(../blocks/places-grid/place/__website/_url-heading/place__website_url-heading.css);
-@import url(../blocks/places-grid/place/__website/_link/place__website_link.css);
+@import url(../blocks/places-grid/place/__website-link/place__website-link.css);
+@import url(../blocks/places-grid/place/__website-url-heading/place__website-url-heading.css);
 
 @import url(../blocks/cover/cover.css);
 @import url(../blocks/cover/__title/cover__title.css);
