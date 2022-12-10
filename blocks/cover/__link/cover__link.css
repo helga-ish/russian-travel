@@ -1,12 +1,23 @@
 .cover__link {
     text-decoration: none;
     color: #FFFFFF;
-    transition: background-color 0.3s ease;
     padding: 245px 312px 245px 312px;
     display: block;
 }
 
-.cover__link:hover {
+.cover__link::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 44, 47, 0.3);
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.cover__link:hover::before {
     background-color: rgba(42, 44, 47, 0.8);
 }
 

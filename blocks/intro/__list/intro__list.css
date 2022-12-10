@@ -3,8 +3,8 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
-    padding-bottom: 92px;
-    white-space: pre-line;
+    padding: 0 0 92px 0;
+    list-style-type: none;
 }
 
 @media screen and (max-width: 980px) {

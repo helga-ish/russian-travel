@@ -3,10 +3,22 @@
     max-height: calc(0.62*100vw);
     margin: 92px auto 0 auto;
     box-sizing: border-box;
+    background-image: url("../../images/cover-trains.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
 
 @media screen and (max-width: 980px) {
     .cover {
         margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .cover {
+        margin-top: 66px;
     }
 }

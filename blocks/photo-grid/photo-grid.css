@@ -10,9 +10,7 @@
 
 @media screen and (max-width: 1200px) {
     .photo-grid {
-        display: grid;
         grid-template-columns: repeat(3, 300px);
-        gap: 14px;
     }
 }
 
