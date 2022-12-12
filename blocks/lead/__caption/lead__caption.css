@@ -6,6 +6,8 @@
     letter-spacing: 1.5px;
     margin: 0;
     text-transform: uppercase;
+    display: flex;
+    align-self: flex-start;
 }
 
 @media screen and (max-width: 980px) {

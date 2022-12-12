@@ -7,9 +7,3 @@
 .place__paragraph-text:nth-last-of-type(1) {
     padding-bottom: 0px;
 }
-
-@media screen and (max-width: 980px) {
-    .place__paragraph-text {
-        padding-bottom: 25px;
-    }
-}
