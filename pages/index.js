@@ -58,7 +58,7 @@ const translations = {
 
     },
     en: {
-        leadTitle: "Travelling through Russia",
+        leadTitle: "Travelling across Russia",
         leadSubtitle: "The real country is here, not in the news.",
         leadImageAlt: "a girl in the train",
         leadCaption: "your shelf is - above",
